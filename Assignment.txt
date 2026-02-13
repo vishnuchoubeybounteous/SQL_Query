@@ -60,6 +60,16 @@ insert into student (student_id, first_name, last_name, birthdate, department_id
 (8, 'Ethan', 'Miller', '1996-03-30', 2, 8);
 
 
+Solution 3:-
+
+select count(*) from student;
+
+Solution 4:-
+
+select d.department_name from student s join department d 
+on d.department_id=s.department_id where s.first_name='John';
+
+
 
 
 
