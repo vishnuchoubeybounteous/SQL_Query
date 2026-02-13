@@ -1,0 +1,29 @@
+Solution 1.
+
+create table department (
+    department_id int primary key,
+    department_name varchar(20) not null
+);
+
+create table address (
+    address_id int primary key,
+    street_address varchar(255),
+    city varchar(20),
+    state varchar(20),
+    postal_code varchar(20)
+);
+
+create table student (
+    student_id int primary key,
+    first_name varchar(20) not null,
+    last_name varchar(50) not null,
+    birthdate date,
+    department_id int,
+    address_id int,
+    foreign key (department_id)
+    references department(department_id),
+    foreign key(address_id)
+    references address(address_id)
+);
+
+
