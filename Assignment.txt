@@ -69,7 +69,9 @@ Solution 4:-
 select d.department_name from student s join department d 
 on d.department_id=s.department_id where s.first_name='John';
 
+Solution 5:-
 
+select d.department_name,count(*) as student_count from department d join student s on d.department_id=s.department_id group by d.department_name;
 
 
 
