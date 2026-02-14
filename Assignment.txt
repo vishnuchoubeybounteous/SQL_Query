@@ -86,6 +86,14 @@ select * from student s
 join department d on s.department_id=d.department_id
 where d.department_name='Computer Science';
 
+Solution 8:-
+
+update address a 
+set city='New York'
+from student s where
+s.address_id=a.address_id
+and s.first_name='Jane';
+
 
 
 
