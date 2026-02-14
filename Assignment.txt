@@ -74,6 +74,15 @@ Solution 5:-
 select d.department_name,count(*) as student_count from department d join student s on d.department_id=s.department_id group by d.department_name;
 
 
+Solution 6:-
+
+select * from student s 
+left join department d on s.department_id=d.department_id 
+left join address a on s.address_id=a.address_id;
+
+Solution 7:-
+
+
 
 
 
