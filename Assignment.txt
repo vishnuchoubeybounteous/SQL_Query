@@ -82,6 +82,10 @@ left join address a on s.address_id=a.address_id;
 
 Solution 7:-
 
+select * from student s
+join department d on s.department_id=d.department_id
+where d.department_name='Computer Science';
+
 
 
 
