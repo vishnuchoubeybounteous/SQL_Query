@@ -119,6 +119,11 @@ select * from student s
 join address a on s.address_id=a.address_id
 where a.city='Springfield'
 
+Solution 13:-
+
+select * from student where
+extract(month from birthdate)=2;
+
 
 
 
