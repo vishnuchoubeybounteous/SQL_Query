@@ -99,6 +99,20 @@ Solution 9:-
 delete from student
 where student_id=5;
 
+Solution 10:-
+
+select * from student s 
+join department d on s.department_id=d.department_id
+join address a on s.address_id=a.address_id
+where a.city='New York'
+
+Solution 11:-
+
+select d.department_name, count(*) total_student 
+from student s join department d
+on s.department_id=d.department_id
+group by d.department_name;
+
 
 
 
