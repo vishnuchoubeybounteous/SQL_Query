@@ -94,6 +94,11 @@ from student s where
 s.address_id=a.address_id
 and s.first_name='Jane';
 
+Solution 9:-
+
+delete from student
+where student_id=5;
+
 
 
 
