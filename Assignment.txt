@@ -185,6 +185,12 @@ join address a on s.address_id=a.address_id
 join department d on s.department_id=d.department_id
 where a.city='Chicago' and d.department_name='Mathematics'
 
+Solution 21:-
+
+select s.first_name,s.last_name from student s
+join address a on s.address_id =a.address_id
+where a.city='Urbana' or a.city= 'Peoria'
+
 
 
 
