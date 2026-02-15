@@ -148,6 +148,12 @@ SELECT *
 FROM student
 WHERE EXTRACT(YEAR FROM birthdate) BETWEEN 1995 AND 1998;
 
+Solution 16:-
+
+select s.student_id,s.first_name,s.last_name,d.department_name from student s
+join department d on s.department_id=d.department_id
+order by d.department_name;
+
 
 
 
