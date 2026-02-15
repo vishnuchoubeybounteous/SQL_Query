@@ -142,6 +142,12 @@ join address a
     on s.address_id = a.address_id
 where s.first_name = 'John';
 
+Solution 15:-
+
+SELECT *
+FROM student
+WHERE EXTRACT(YEAR FROM birthdate) BETWEEN 1995 AND 1998;
+
 
 
 
