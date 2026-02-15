@@ -155,6 +155,20 @@ join department d on s.department_id=d.department_id
 order by d.department_name;
 
 
+Solution 17:-
+
+select d.department_name,count(*) as total_student from student s
+join department d on s.department_id=d.department_id
+join address a on s.address_id=a.address_id
+where a.city='Champaign'
+group by d.department_name;
+
+Solution 18:-
+
+select s.first_name,s.last_name from student s
+join address a on s.address_id=a.address_id
+where a.street_address like '%Pine%';
+
 
 
 
